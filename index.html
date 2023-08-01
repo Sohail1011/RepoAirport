@@ -13,20 +13,41 @@
     <form action="">
         <div>
             <label for="name">Insert your name</label>
-            <input id="name" type="text">
+            <input id="name" type="text" autocomplete="off" required>
         </div>
         <div>
             <label for="lastname">Insert your lastname</label>
-            <input id="lastname" type="text">
+            <input id="lastname" type="text" autocomplete="off" required>
         </div>
         <div>
             <label for="descriptionPerson">Insert description</label>
+            <br>
             <textarea name="" id="descriptionPerson" cols="30" rows="10"></textarea>
         </div>
         <div>
-            <label for="terms">Have you read the <a href="">terms and conditions</a></label>
+            <input type="checkbox" required><label for="terms">Have you read the <a href="">terms and
+                    conditions</a></label>
         </div>
+        <section>
+            <article>
+                <label for="passwordPerson">Insert Password</label>
+                <input type="password" required minlength="40" maxlength="50">
+            </article>
+            <article>
+                <label for="datePerson">Birth of date</label>
+                <input type="date">
+            </article>
+            <article>
+                <label for="colorPerson">What is your favorite color?</label>
+                <input type="color" disabled>
+            </article>
+            <article>
+                <label for="milesPerson">How many miles you have?</label>
+                <input id="milesPerson" type="number">
+            </article>
+        </section>
         <button type="submit">Register Now</button>
+        <button>Cancel</button>
     </form>
 </body>
 <style>
@@ -45,7 +66,8 @@
     label {
         color: white;
     }
-    a{
+
+    a {
         color: aqua;
     }
 </style>
